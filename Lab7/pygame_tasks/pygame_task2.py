@@ -65,22 +65,7 @@ while running:
     pygame.display.update()
     
     
-"""
-    pressed = pygame.key.get_pressed()
-    if pressed[pygame.K_f]:
-        play_song(ind)
-    if pressed[pygame.K_g]:
-        
-    if pressed[pygame.K_h]:
-        if ind < len(songs) - 1:
-            ind += 1
-            print(ind)
-            play_song(ind)
-    if pressed[pygame.K_j]:
-        if ind >= 0:
-            ind -= 1
-            play_song(ind)
-"""
+
 
 
 
