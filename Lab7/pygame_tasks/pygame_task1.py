@@ -19,14 +19,14 @@ def rotate_for_minutes(img_min, center_image_min, angle_for_min):
 pygame.init()
 screen = pygame.display.set_mode([829, 836])
 screen.fill((255, 255, 255))
-pygame.display.set_caption("Вращение")
-clock_img = pygame.image.load(r'C:\Users\Asus-New\Desktop\pp2-22B030554\tsis7\src\main-clock.png')
+pygame.display.set_caption("Clock")
+clock_img = pygame.image.load(r'/Users/bmk/Documents/MyDocs/Student/3 Course 2 part/PP2/Lab7/src/main-clock.png')
 screen.blit(clock_img, (0, 0))
 
 
-image_sec = pygame.image.load(r"C:\Users\Asus-New\Desktop\pp2-22B030554\tsis7\src\left-hand.png").convert_alpha()
+image_sec = pygame.image.load(r"/Users/bmk/Documents/MyDocs/Student/3 Course 2 part/PP2/Lab7/src/left-hand.png").convert_alpha()
 image_sec = pygame.transform.rotate(image_sec, 90)
-image_min = pygame.image.load(r"C:\Users\Asus-New\Desktop\pp2-22B030554\tsis7\src\right-hand.png").convert_alpha()
+image_min = pygame.image.load(r"/Users/bmk/Documents/MyDocs/Student/3 Course 2 part/PP2/Lab7/src/right-hand.png").convert_alpha()
 image_min = pygame.transform.rotate(image_min, 90)
 center_window = (414.5, 418)
 angle_for_sec = datetime.datetime.now().second * 6
